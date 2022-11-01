@@ -1,0 +1,6 @@
+[project]
+name = PyConChina 2022
+output_path = _build
+
+[packages]
+lektor-tailwind = 0.1.0
