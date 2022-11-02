@@ -10,4 +10,5 @@ license = {text = "MIT"}
 
 [tool.pdm.scripts]
 serve = "lektor server"
-build_static = "lektor build"
+# Don't know why but need to build twice so that tailwindcss can compile rightly.
+build_static = {composite = ["lektor build", "lektor build"]}
