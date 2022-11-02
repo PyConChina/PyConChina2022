@@ -23,5 +23,6 @@ pdm serve
 - `assets` 存放静态资源
 - `content` 存放网站内容数据
 - `databags` 存放元数据配置信息
+- `templates` (Jinja)模板文件
 
 另外可以通过开发服务器的管理员界面在网页中进行修改、上传附件等操作。
