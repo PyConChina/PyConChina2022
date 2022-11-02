@@ -1,0 +1,20 @@
+{
+  "main": [
+    { "title": "首页", "url": "/" },
+    { "title": "大会", "url": "/about" },
+    { "title": "日程", "url": "https://jinshuju.net/f/qh1MX5" },
+    {
+      "title": "线下",
+      "url": "",
+      "children": [
+        { "title": "北京", "url": "#" },
+        { "title": "深圳", "url": "#" },
+        { "title": "青岛", "url": "#" }
+      ]
+    }
+  ],
+  "extra": [
+    { "title": "购票", "url": "" },
+    { "title": "问卷", "url": "" }
+  ]
+}

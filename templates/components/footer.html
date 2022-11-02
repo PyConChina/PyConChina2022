@@ -1,0 +1,20 @@
+<footer class="bg-white mt-8 py-4 border-t-2 border-solid border-black">
+  <div class="max-w-6xl mx-auto px-4 flex justify-between">
+    <section class="grow">
+      <h1 class="text-lg font-bold p-2">导航</h1>
+      {% for item in bag('nav', 'main')[:-1] %}
+        <a href="{{item.url|url}}" class="block p-2">{{item.title}}</a>
+      {% endfor %}
+    </section>
+    <section class="grow border-l border-gray-200">
+      <h1 class="text-lg font-bold p-2">线下</h1>
+      {% for item in bag('nav', 'main')[-1].children %}
+        <a href="{{item.url|url}}" class="block p-2">{{item.title}}</a>
+      {% endfor %}
+    </section>
+    <section class="grow border-l border-gray-200">
+      <h1 class="text-lg font-bold p-2">主办方</h1>
+      <p class="p-2"><a href="https://pychina.org"><img class="w-60" src="{{ '/pychina-logo.jpeg'|url }}" alt="PyChina"></a></p>
+    </section>
+  </div>
+</footer>

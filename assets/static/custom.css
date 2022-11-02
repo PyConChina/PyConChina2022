@@ -13,3 +13,18 @@
 .font-bitmap {
   font-family: Bitmap, sans-serif;
 }
+
+.menu {
+  position: relative;
+}
+
+.menu-item {
+  position: absolute;
+  top: 100%;
+  display: none;
+  white-space: nowrap;
+}
+
+.menu:hover .menu-item {
+  display: block;
+}

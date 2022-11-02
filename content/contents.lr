@@ -1,3 +1,11 @@
 title: 首页
 ---
 _template: home.html
+---
+body:
+
+<p class="text-center">
+<img src="pychina-logo.jpeg" alt="PyChina">
+</p>
+
+合作及其他更多事宜请联系：CynthiaXin1

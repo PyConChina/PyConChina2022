@@ -1,6 +1,4 @@
 <!-- Navbar goes here -->
-{% set navItems = [ { 'title': '首页', 'url': '/' }, { 'title': '关于大会', 'url': '/about' }, {
-'title': '日程', 'url': '/schedule' }, { 'title': '联系我们', 'url': '/contact' }, ] %}
 <nav>
   <div class="max-w-6xl mx-auto px-4">
     <div class="flex justify-between">
@@ -12,23 +10,36 @@
           </a>
         </div>
         <!-- Primary Navbar items -->
-        <div class="hidden md:flex items-center space-x-1 text-xl font-bold font-bitmap">
-          {% for item in navItems %}
-          <a
-            href="{{item.url|url}}"
-            class="py-4 px-2 text-black transition duration-300 {% if this.is_child_of(item.url) %}border-b-4 border-gray-900 text-shadow{% else %}hover:text-shadow{% endif %}"
-            >{{item.title}}</a
-          >
+        <div class="hidden md:flex items-center space-x-1 text-xl">
+          {% for item in bag('nav', 'main') %}
+          {% if item.children %}
+            <div class="menu">
+              <div class="py-4 px-2 font-bitmap cursor-pointer text-black transition duration-300 hover:text-shadow">{{ item.title }}</div>
+              <div class="menu-item shadow-lg border-2 border-solid border-black bg-white">
+                {% for child in item.children %}
+                <a href="{{ child.url|url }}" class="block py-2 pl-2 pr-6 text-base transition duration-300 hover:bg-black hover:text-white" target="_blank">{{ child.title }}</a>
+                {% endfor %}
+              </div>
+            </div>
+          {% else %}
+            <a
+              href="{{item.url|url}}"
+              class="py-4 px-2 font-bitmap text-black transition duration-300 {% if this.path == item.url %}border-b-4 border-gray-900 text-shadow{% else %}hover:text-shadow{% endif %}"
+              >{{item.title}}</a
+            >
+          {% endif %}
           {% endfor %}
         </div>
       </div>
       <!-- Secondary Navbar items -->
       <div class="hidden md:flex items-center space-x-3">
+        {% for item in bag('nav', 'extra') %}
         <a
-          href=""
+          href="{{ item.url|url }}"
           class="py-2 px-2 font-medium text-black bg-white hover:bg-gray-200 transition duration-300 border-solid border-2 border-black shadow-lg"
-          >购票</a
+          >{{ item.title }}</a
         >
+        {% endfor %}
       </div>
       <!-- Mobile menu button -->
       <div class="md:hidden flex items-center">
@@ -52,21 +63,34 @@
   <!-- mobile menu -->
   <div class="hidden mobile-menu">
     <ul>
-      {% for item in navItems %}
+      {% for item in bag('nav', 'main') %}
       <li>
+        {% if item.children %}
+        <div class="block text-sm px-2 py-4">{{item.title}}</div>
+        <ul>
+          {% for child in item.children %}
+          <li>
+            <a href="{{ child.url|url }}" class="block text-sm py-2 pl-4 hover:bg-gray-900 transition duration-300">{{ child.title }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+        {% else %}
         <a
           href="{{item.url|url}}"
-          class="block text-sm px-2 py-4 {% if this.is_child_of(item.url) %}text-white bg-black font-semibold{% else %}hover:bg-gray-900 transition duration-300{% endif %}"
+          class="block text-sm px-2 py-4 {% if this.path == item.url %}text-white bg-black font-semibold{% else %}hover:bg-gray-900 transition duration-300{% endif %}"
         >
           {{item.title}}</a
         >
+        {% endif %}
       </li>
       {% endfor %}
+      {% for item in bag('nav', 'extra') %}
       <li>
-        <a href="" class="block text-sm px-2 py-4 hover:bg-gray-900 transition duration-300"
-          >购票</a
+        <a href="{{ item.url|url }}" class="block text-sm px-2 py-4 hover:bg-gray-900 transition duration-300"
+          >{{ item.title }}</a
         >
       </li>
+      {% endfor %}
     </ul>
   </div>
   <script>
