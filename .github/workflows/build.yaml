@@ -39,6 +39,8 @@ jobs:
           repository: PyConChina/PyConChina.github.io
           token: ${{ secrets.GH_TOKEN }}
 
+      - run: rm -rv ./2022
+
       - uses: actions/download-artifact@v3
         with:
           name: website
