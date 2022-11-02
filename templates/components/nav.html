@@ -8,11 +8,11 @@
         <div>
           <!-- Website Logo -->
           <a href="{{ '/'|url }}" class="flex items-center py-4 px-2">
-            <img src="logo.png" alt="Logo" class="h-8 w-8 mr-2" />
+            <img src="{{ '/pychina.png'|asseturl }}" alt="Logo" class="h-10 w-10 mr-2" />
           </a>
         </div>
         <!-- Primary Navbar items -->
-        <div class="hidden md:flex items-center space-x-1 text-xl font-bold">
+        <div class="hidden md:flex items-center space-x-1 text-xl font-bold font-bitmap">
           {% for item in navItems %}
           <a
             href="{{item.url|url}}"

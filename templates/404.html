@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block title %}{{ this.title }}{% endblock %}
+{% block body %}
+  <div class="flex justify-center items-center h-96 shadow-xl border-2 border-black border-solid bg-white">
+    <div>
+      <p class="text-4xl mb-6 font-bitmap">404: 页面未找到</p>
+      <div class="flex space-x-3">
+        <a href="{{ '/'|url }}" class="py-2 px-2 font-medium text-black bg-white hover:bg-gray-200 transition duration-300 border-solid border-2 border-black shadow-lg">返回首页</a>
+        <a href="" class="py-2 px-2 font-medium text-black bg-white hover:bg-gray-200 transition duration-300 border-solid border-2 border-black shadow-lg">报告问题</a>
+      </div>
+    </div>
+{% endblock %}

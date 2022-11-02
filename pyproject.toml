@@ -3,7 +3,7 @@ authors = [
     {name = "Frost Ming", email = "mianghong@gmail.com"},
 ]
 dependencies = [
-    "Lektor @ git+https://github.com/frostming/lektor.git@feature/livereload",
+    "lektor>=3.4.0b3",
 ]
 requires-python = ">=3.9"
 license = {text = "MIT"}

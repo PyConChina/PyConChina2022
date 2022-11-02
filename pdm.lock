@@ -103,11 +103,8 @@ dependencies = [
 
 [[package]]
 name = "lektor"
-version = "3.3.3.dev176+g509dec4"
+version = "3.4.0b3"
 requires_python = ">=3.7"
-git = "https://github.com/frostming/lektor.git"
-ref = "feature/livereload"
-revision = "509dec45b96f92ec4aa191638c580f7f862b89f1"
 summary = "A static content management system."
 dependencies = [
     "Babel",
@@ -274,7 +271,7 @@ summary = "Backport of pathlib-compatible object wrapper for zip files"
 
 [metadata]
 lock_version = "4.0"
-content_hash = "sha256:80c4626cd863ac147a0fa5864ce1146521a413ee927317798d25be73a35b9acc"
+content_hash = "sha256:7011bdbc8d36d2f6117f9568e166d15a3ac602672efc0b6f4db5154b47951a0a"
 
 [metadata.files]
 "babel 2.10.3" = [
@@ -331,6 +328,10 @@ content_hash = "sha256:80c4626cd863ac147a0fa5864ce1146521a413ee927317798d25be73a
 "jinja2 3.1.2" = [
     {url = "https://files.pythonhosted.org/packages/7a/ff/75c28576a1d900e87eb6335b063fab47a8ef3c8b4d88524c4bf78f670cce/Jinja2-3.1.2.tar.gz", hash = "sha256:31351a702a408a9e7595a8fc6150fc3f43bb6bf7e319770cbc0db9df9437e852"},
     {url = "https://files.pythonhosted.org/packages/bc/c3/f068337a370801f372f2f8f6bad74a5c140f6fda3d9de154052708dd3c65/Jinja2-3.1.2-py3-none-any.whl", hash = "sha256:6088930bfe239f0e6710546ab9c19c9ef35e29792895fed6e6e31a023a182a61"},
+]
+"lektor 3.4.0b3" = [
+    {url = "https://files.pythonhosted.org/packages/07/1e/8d7050964c34894fcf8fec3170e4916924c6c72a1ea9c6d1aa2bbb5deab7/Lektor-3.4.0b3.tar.gz", hash = "sha256:f7f1587f15a83fc205e9c92ceb98ef527ada7921df46f96ae964d4ebfc072839"},
+    {url = "https://files.pythonhosted.org/packages/6e/49/1749d205f2ee4a05c97f4c6f07450e93457f09f5f78241eea77c5ea3b516/Lektor-3.4.0b3-py3-none-any.whl", hash = "sha256:855fe77f518b96b47378de27ba56b773c5ae69a736686a6f3b77085989b74d56"},
 ]
 "markupsafe 2.1.1" = [
     {url = "https://files.pythonhosted.org/packages/06/7f/d5e46d7464360b6ac39c5b0b604770dba937e3d7cab485d2f3298454717b/MarkupSafe-2.1.1-cp39-cp39-macosx_10_9_universal2.whl", hash = "sha256:e04e26803c9c3851c931eac40c695602c6295b8d432cbe78609649ad9bd2da8a"},
