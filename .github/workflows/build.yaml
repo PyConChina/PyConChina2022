@@ -46,10 +46,15 @@ jobs:
           name: website
           path: '2022'
 
-      - name: Commit and push
-        uses: github-actions-x/commit@v2.9
+      - name: Commit files
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add 2022
+          git commit -m "Deploy 2022 website"
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master
         with:
-          github-token: ${{ secrets.GH_TOKEN }}
-          name: Frost Ming
-          email: mianghong@gmail.com
-          commit-message: Deploy 2022 website
+          github_token: ${{ secrets.GH_TOKEN }}
+          branch: master
