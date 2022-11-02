@@ -44,12 +44,12 @@ jobs:
       - uses: actions/download-artifact@v3
         with:
           name: website
-          path: '2021'
+          path: '2022'
 
       - name: Commit and push
         uses: github-actions-x/commit@v2.9
         with:
           github-token: ${{ secrets.GH_TOKEN }}
-          name: GitHub Action
-          email: action@github.com
-          commit-message: Deploy 2021 website
+          name: Frost Ming
+          email: mianghong@gmail.com
+          commit-message: Deploy 2022 website
