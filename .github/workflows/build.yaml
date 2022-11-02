@@ -1,0 +1,55 @@
+name: "Deploy Website"
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/**"
+      - "assets/**"
+      - "content/**"
+      - "databags/**"
+      - "models/**"
+      - "templates/**"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: actions/setup-pdm@v3
+        with:
+          python-version: '3.10'
+          cache: true
+
+      - name: Install dependencies
+        run: pdm install
+
+      - name: Build
+        run: pdm build
+      - uses: actions/upload-artifact@v3
+        with:
+          name: website
+          path: _build
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          repository: PyConChina/PyConChina.github.io
+
+      - uses: actions/download-artifact@v3
+        with:
+          name: website
+          path: '2021'
+
+      - name: Commit and push
+        uses: github-actions-x/commit@v2.9
+        with:
+          github-token: ${{ secrets.GH_TOKEN }}
+          name: GitHub Action
+          email: action@github.com
+          commit-message: Deploy 2021 website
