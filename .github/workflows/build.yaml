@@ -27,7 +27,7 @@ jobs:
         run: pdm install
 
       - name: Build
-        run: pdm build
+        run: pdm build_static
       - uses: actions/upload-artifact@v3
         with:
           name: website

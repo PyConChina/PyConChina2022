@@ -10,4 +10,4 @@ license = {text = "MIT"}
 
 [tool.pdm.scripts]
 serve = "lektor server"
-build = "lektor build"
+build_static = "lektor build"
