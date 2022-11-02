@@ -52,10 +52,6 @@ jobs:
           git config --local user.name "GitHub Action"
           git add 2022
           git commit -m "Deploy 2022 website"
+          git remote set-url origin https://frostming:${{secrets.GH_TOKEN}}@github.com/PyConChina/PyConChina.github.io.git
+          git push origin master
 
-      - name: Push changes
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GH_TOKEN }}
-          branch: master
-          repository: PyConChina/PyConChina.github.io
