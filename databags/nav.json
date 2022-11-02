@@ -8,13 +8,14 @@
       "url": "",
       "children": [
         { "title": "北京", "url": "#" },
+        { "title": "上海", "url": "#" },
         { "title": "深圳", "url": "#" },
-        { "title": "青岛", "url": "#" }
+        { "title": "杭州", "url": "#" }
       ]
     }
   ],
   "extra": [
-    { "title": "购票", "url": "" },
-    { "title": "问卷", "url": "" }
+    { "title": "购票", "url": "#" },
+    { "title": "问卷", "url": "#" }
   ]
 }
