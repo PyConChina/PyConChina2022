@@ -40,6 +40,7 @@ jobs:
       - uses: actions/checkout@v3
         with:
           repository: PyConChina/PyConChina.github.io
+          token: ${{ secrets.GH_TOKEN }}
 
       - uses: actions/download-artifact@v3
         with:
@@ -52,6 +53,5 @@ jobs:
           git config --local user.name "GitHub Action"
           git add 2022
           git commit -m "Deploy 2022 website"
-          git remote set-url origin https://frostming:${{secrets.GH_TOKEN}}@github.com/PyConChina/PyConChina.github.io.git
           git push origin master
 
