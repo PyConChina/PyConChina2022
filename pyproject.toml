@@ -10,5 +10,5 @@ license = {text = "MIT"}
 
 [tool.pdm.scripts]
 serve = "lektor server"
-# Don't know why but need to build twice so that tailwindcss can compile rightly.
-build_static = {composite = ["lektor build", "lektor build"]}
+build = "lektor build -f minify"
+start = "python -m http.server -d _build"
