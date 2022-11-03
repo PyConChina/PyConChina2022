@@ -1,11 +1,16 @@
 {
   "main": [
     { "title": "首页", "url": "/" },
-    { "title": "大会", "url": "/about" },
-    { "title": "日程", "url": "https://jinshuju.net/f/qh1MX5" },
+    {
+      "title": "大会",
+      "children": [
+        { "title": "关于大会", "url": "/about" },
+        { "title": "讲师/议题征集", "url": "/cfp" }
+      ]
+    },
+    { "title": "组委会", "children": [{ "title": "成为志愿者", "url": "/volunteer" }] },
     {
       "title": "线下",
-      "url": "",
       "children": [
         { "title": "北京", "url": "#" },
         { "title": "上海", "url": "#" },
@@ -17,5 +22,6 @@
   "extra": [
     { "title": "购票", "url": "#" },
     { "title": "问卷", "url": "#" }
-  ]
+  ],
+  "legacy": ["2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021"]
 }

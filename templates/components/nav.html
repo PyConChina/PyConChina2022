@@ -17,7 +17,7 @@
               <div class="py-4 px-2 font-bitmap cursor-pointer text-black transition duration-300 hover:text-shadow">{{ item.title }}</div>
               <div class="menu-item shadow-lg border-2 border-solid border-black bg-white">
                 {% for child in item.children %}
-                <a href="{{ child.url|url }}" class="block py-2 pl-2 pr-6 text-base transition duration-300 hover:bg-black hover:text-white" target="_blank">{{ child.title }}</a>
+                <a href="{{ child.url|url }}" class="block py-2 pl-2 pr-6 text-base transition duration-300 hover:bg-black hover:text-white">{{ child.title }}</a>
                 {% endfor %}
               </div>
             </div>
