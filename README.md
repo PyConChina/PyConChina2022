@@ -16,6 +16,8 @@ pdm install
 pdm serve
 ```
 
+支持热重载。
+
 ## 添加修改内容
 
 本网站使用 [Lektor](https://www.getlektor.com/docs) 搭建，各目录作用如下：
