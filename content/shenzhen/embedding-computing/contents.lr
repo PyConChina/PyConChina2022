@@ -1,0 +1,13 @@
+title: 多模态应用场景下的高性能 Embedding 计算服务
+---
+body: 本次演讲的主题是介绍多模态场景下的向量搜索技术，以及如何使用 CLIP-as-Service 的服务快速搭建跨模态向量检索引擎。本演讲首先会阐述目前多模态技术的发展应用及其多模态表征模型（尤其是 CLIP）的原理及一些相关的下游应用，然后讲述如何使用预训练好的多模态模型获得输入数据的 embedding，以及一个满足工业界需求的 embedding service 需要包含哪些功能。最后展示我们的 CLIP-as-Service 的一些现有功能以及一些简单的 demo。
+---
+bio: Jina AI 高级软件工程师
+---
+introduction:
+
+硕士毕业于加州大学圣地亚哥分校，曾就职于平安人寿，腾讯等公司，主要研究兴趣是多模态内容理解，多模态预训练，多模态检索等。现在就职于 Jina AI，担任 senior 软件工程师，是 CLIP-as-Service 团队的开发者之一。
+---
+speaker: 付杰
+---
+avatar: fu-jie.jpg

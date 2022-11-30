@@ -1,0 +1,25 @@
+{% extends "layout.html" %} {% block title %}{{ this.title }}{% endblock %} {% block body %}
+<div class="text-center">
+  <h1 class="font-bold text-4xl my-6 text-center">PyConChina 2022: {{this.title}}</h1>
+  <p class="text-xl mb-4">开始时间: {{this.start_date|default('待定')}}</p>
+  <p class="text-xl mb-4">地点: {{this.venue|default('待定')}}</p>
+  {% if this.activity %}
+  <p><a href="{{this.activity}}">查看活动</a></p>
+  {% endif %}
+</div>
+<section>
+  <h1 class="font-bitmap text-4xl my-6">演讲嘉宾</h1>
+  {% for talk in this.children %}
+  <div class="shadow-xl border-2 border-black border-solid bg-white p-4 my-4 flex items-center">
+    <div class="mr-4">
+      <img class="w-40 h-40 rounded-full" src="{% if talk.avatar.startswith('/') %}{{talk.avatar|url}}{% else %}{{ (talk._id + '/' + talk.avatar)|url }}{% endif %}" alt="{{talk.speaker}}" />
+    </div>
+    <div>
+      <p class="mb-4">{{talk.bio}}</p>
+      <p>{{talk.start_date|default('时间待定')}}</p>
+      <p class="text-xl font-bold"><a href="{{talk._path|url}}">{{talk.title}}</a></p>
+    </div>
+  </div>
+  {% endfor %}
+</section>
+{% endblock %}
