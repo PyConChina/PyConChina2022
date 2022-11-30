@@ -2,6 +2,8 @@ _model: city
 ---
 title: 深圳
 ---
-start_date:
+start_date: 2022-12-17 11:00 Asia/Shanghai
 ---
-venue: 四块科技（深圳）有限公司
+venue: 四块科技（深圳）有限公司，深圳市南山区科技园南后海大道 2378 号芒果网总部大厦 10 楼
+---
+activity_url: 

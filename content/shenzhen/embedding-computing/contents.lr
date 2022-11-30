@@ -4,10 +4,10 @@ body: 本次演讲的主题是介绍多模态场景下的向量搜索技术，�
 ---
 bio: Jina AI 高级软件工程师
 ---
-introduction:
-
-硕士毕业于加州大学圣地亚哥分校，曾就职于平安人寿，腾讯等公司，主要研究兴趣是多模态内容理解，多模态预训练，多模态检索等。现在就职于 Jina AI，担任 senior 软件工程师，是 CLIP-as-Service 团队的开发者之一。
+introduction: 硕士毕业于加州大学圣地亚哥分校，曾就职于平安人寿，腾讯等公司，主要研究兴趣是多模态内容理解，多模态预训练，多模态检索等。现在就职于 Jina AI，担任 senior 软件工程师，是 CLIP-as-Service 团队的开发者之一。
 ---
 speaker: 付杰
 ---
 avatar: fu-jie.jpg
+---
+start_date: 2022-12-17 18:00:00 Asia/Shanghai
