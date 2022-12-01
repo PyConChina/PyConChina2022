@@ -1,5 +1,7 @@
 title: 主办方及合作伙伴
 ---
+key: 4
+---
 body:
 <style>.partners img { display: inline-block; max-width: 20rem; }</style>
 <div class="text-center partners">
