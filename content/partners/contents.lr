@@ -1,0 +1,30 @@
+title: 主办方及合作伙伴
+---
+body:
+<style>.partners img { display: inline-block; max-width: 20rem; }</style>
+<div class="text-center partners">
+
+## 主办方
+
+[![PyChina](pychina-full.png "PyChina")](https://pychina.org)
+
+## 钻石赞助
+[华为云](https://www.huaweicloud.com/)
+
+## 白金赞助
+
+[![Jina AI](jina.png "JinaAI")](https://jina.ai/)
+[![微软 Azure](azure.jpg "Microsoft Azure")](https://azure.microsoft.com/)
+[阿里云](https://www.aliyun.com/)
+
+## 特别支持伙伴
+
+[![Microsoft Reactor](reactor.png "Microsoft Reactor")](https://developer.microsoft.com/reactor)
+![四块科技](4-squares.png "四块科技")
+
+## 战略媒体伙伴
+
+[![CSDN](csdn.png "CSDN")](https://www.csdn.net/)
+[![思否](segmentfault.png "思否")](https://segmentfault.com/)
+
+</div>

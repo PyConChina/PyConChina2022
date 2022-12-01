@@ -2,10 +2,4 @@ title: 首页
 ---
 _template: home.html
 ---
-body:
 
-<p style="text-align: center;">
-<a href="https://pychina.org" target="_blank"><img src="pychina-logo.jpeg" alt="PyChina"></a>
-</p>
-
-合作及其他更多事宜请联系：CynthiaXin1

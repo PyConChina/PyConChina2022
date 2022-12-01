@@ -5,13 +5,15 @@
       "title": "大会",
       "children": [
         { "title": "关于大会", "url": "/about" },
-        { "title": "讲师/议题征集", "url": "/cfp" }
+        { "title": "讲师/议题征集", "url": "/cfp" },
+        { "title": "合作伙伴", "url": "/partners" }
       ]
     },
     { "title": "组委会", "children": [{ "title": "成为志愿者", "url": "/volunteer" }] },
     {
       "title": "演讲",
       "children": [
+        { "title": "北京", "url": "/beijing" },
         { "title": "上海", "url": "/shanghai" },
         { "title": "深圳", "url": "/shenzhen" },
         { "title": "杭州", "url": "/hangzhou" }

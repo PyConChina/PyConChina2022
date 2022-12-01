@@ -1,0 +1,13 @@
+title: Python Profiling 原理深入探索与实践
+---
+avatar: yi-li.jpg
+---
+bio:
+
+阿里云高级开发工程师 
+---
+body: 使用 Profiling 是监控代码的资源开销、定位问题的有效手段，基于已有的 Profiling 工具链，目前也出现了一些新兴的持续监控方案。此次分享我们将从 Python Profiling 的原理出发，讨论其最新的监控方案 Continuous Profiling 等，并动手实战完成 Python系统的剖析与分析流程。
+---
+introduction: 就职于阿里云日志服务 SLS 团队，主要关注大数据安全方向、海量数据接入审计、服务器底层资源效能优化等领域。曾就职于 Intel，负责大规模数据中心监控和服务器平台资源管理的开发与设计。使用 Python 多年，乐于分享，在阿里云开发者公众号/社区、B站等分享过多次文章或视频直播。
+---
+speaker: 羿莉
