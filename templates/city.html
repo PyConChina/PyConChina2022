@@ -16,10 +16,12 @@
 <section>
   <h1 class="font-bitmap text-4xl my-6">演讲嘉宾</h1>
   {% for talk in this.children %}
-  <div class="shadow-xl border-2 border-black border-solid bg-white p-4 my-4 flex items-center">
-    <div class="mr-4">
-      <img class="w-40 h-40 rounded-full" src="{% if talk.avatar.startswith('/') %}{{talk.avatar|url}}{% else %}{{ (talk._id + '/' + talk.avatar)|url }}{% endif %}" alt="{{talk.speaker}}" />
-    </div>
+  <div class="shadow-xl border-2 border-black border-solid bg-white p-4 my-4 flex items-center space-x-4">
+    <img
+      class="w-20 h-20 lg:w-40 lg:h-40 rounded-full"
+      src="{% if talk.avatar.startswith('/') %}{{talk.avatar|url}}{% else %}{{ (talk._id + '/' + talk.avatar)|url }}{% endif %}"
+      alt="{{talk.speaker}}"
+    />
     <div>
       <p class="mb-4"><span class="font-bold mr-4 text-xl">{{talk.speaker}}</span>{{talk.bio}}</p>
       <p class="text-xl font-bold"><a href="{{talk._path|url}}">{{talk.title}}</a></p>

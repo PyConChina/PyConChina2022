@@ -4,7 +4,7 @@
       <h1 class="text-lg font-bold p-2">导航</h1>
       {% for item in bag('nav', 'main')[:-1] %} {% if item.children %}
       <div class="p-2">{{ item.title }}</div>
-      <div class="flex space-x-4 pl-6 py-2 text-sm">
+      <div class="flex flex-wrap space-x-4 pl-6 py-2 text-sm">
         {% for child in item.children %}
         <a href="{{ child.url|url }}" class="block hover:text-primary transition duration-300">{{ child.title }}</a>
         {% endfor %}
@@ -24,7 +24,7 @@
       <p>
         <a href="https://pychina.org" target="_blank"><img class="w-full" src="{{ '/pychina-logo.jpeg'|url }}" alt="PyChina" /></a>
       </p>
-      <div class="flex items-center justify-center mb-2 space-x-1">
+      <div class="flex flex-wrap items-center justify-center mb-2 space-x-1">
         <a href="https://github.com/PyConChina/PyConChina2022" class="hover:text-primary transition duration-300 mr-1" target="_blank">
           <svg
             class="w-8 h-8"
