@@ -3,9 +3,15 @@
   <h1 class="font-bold text-4xl my-6 text-center">PyConChina 2022: {{this.title}}</h1>
   <p class="text-xl mb-4">开始时间: {% if this.start_date %}{{this.start_date.strftime('%Y-%m-%d %H:%M:%S')}}{% else %}待定{% endif %}</p>
   <p class="mb-4">地点: {{this.venue|default('待定')}}</p>
-  {% if this.activity %}
-  <p><a href="{{this.activity}}">查看活动</a></p>
-  {% endif %}
+  <div>
+    {% if this.activity_url %}
+    <a href="{{this.activity_url}}" target="_blank" class="py-2 px-2 font-medium text-black bg-white hover:bg-gray-200 transition duration-300 border-solid border-2 border-black shadow-lg"
+      >线下参会</a
+    >
+    {% endif %} {% if this.live_url %}
+    <a href="{{this.live_url}}" target="_blank" class="py-2 px-2 font-medium text-black bg-white hover:bg-gray-200 transition duration-300 border-solid border-2 border-black shadow-lg">线上直播</a>
+    {% endif %}
+  </div>
 </div>
 <section>
   <h1 class="font-bitmap text-4xl my-6">演讲嘉宾</h1>
