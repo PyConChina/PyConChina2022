@@ -1,8 +1,20 @@
 {% extends "layout.html" %} {% block title %}{{ this.title }}{% endblock %} {% block body %}
 <figure><img class="w-full" src="head.jpeg" alt="PyConChina 2022" /></figure>
+<div class="flex justify-center space-x-2 lg:space-x-4 py-2 text-4xl font-bold">
+  {% for city in this.children.filter(F._model == 'city') %}
+  <a
+    href="{{ city._path|url }}"
+    class="py-2 px-2 text-black bg-white hover:bg-gray-200 transition duration-300 border-solid border-2 border-black shadow-lg"
+  >
+    {{ city.title }}
+  </a>
+  {% endfor %}
+</div>
 {% for item in this.children.filter(F._template == 'page.html').order_by('key') %}
 <section>
   <h1 class="font-bitmap text-4xl my-6">{{item.title}}</h1>
-  <div class="prose max-w-none shadow-xl border-2 border-black border-solid bg-white p-4">{{item.body}}</div>
+  <div class="prose max-w-none shadow-xl border-2 border-black border-solid bg-white p-4">
+    {{item.body}}
+  </div>
 </section>
 {% endfor %} {% endblock %}
