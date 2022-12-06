@@ -1,0 +1,16 @@
+title: 使用 Streamlit 在 Python 脚本中快速构建一个可共享数据应用程序
+---
+bio:
+
+Python committer since 2016 
+---
+body:
+
+streamlit 是一个开源库，它可以在几分钟内将数据脚本转换为可共享的 web 应用程序，全部使用纯 Python。本次演讲将向用户展示如何使用 streamlit 和 streamlit Cloud 来构建和部署一个数据应用程序，以及 streamlit 如何改变数据应用程序开发的工作流。结合 DBaaS（如 TiDB Cloud） ，用户可以安全地存储状态，并在数据应用程序中使用它们。
+
+---
+introduction: PingCAP Cloud Ecosystem Service Team Leader
+---
+speaker: 张翔
+---
+avatar: zhang-xiang.jpg
