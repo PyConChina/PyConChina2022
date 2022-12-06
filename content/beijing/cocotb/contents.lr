@@ -1,0 +1,30 @@
+title: Cocotb--硬件验证中的瑞士军刀
+---
+bio: 独立开发者
+---
+body:
+
+由于易学易用的特性和成熟的生态，Python 在 EDA(电子设计自动化)领域已获得越来越多的应用。仿真验证是 IC 设计流程中非常重要的一环，传统上常使用 SystemVerilog 等硬件语言来开发 Testbench，Cocotb 的出现打破了这一常规--它是一个可以使用 Python 来编写VHDL/Verilog Testbench 的框架，基于 Python 的硬件项目测试验证极大简化了 Testbench 的开发，同时使得没有太多硬件开发经验的纯软件开发人员也可以完成相应的硬件验证工作。本议题将包含下列子话题：
+
+1. 基于 Python 的硬件测试验证综述；
+2. 基于 Cocotb 的 SpinalHDL 的测试验证，并在 ARM 开放硬件平台(如树莓派4)上实践；
+3. 使用 Cocotb 进行测试验证的智能网卡项目 Corundum，并在 ARM 开放硬件平台(如树莓派4)上实践； 
+4. 探索 Cocotb 的未来--CocotbD 项目的设想与设计。
+
+另附议题涉及的主要技术栈参考链接如下：  
+Major reference links for the tech stack:   
+https://en.wikipedia.org/wiki/Electronic_design_automation  
+https://en.wikipedia.org/wiki/Hardware_description_language   
+https://en.wikipedia.org/wiki/Hardware_verification_language  
+https://github.com/ben-marshall/awesome-open-hardware-verification  
+https://github.com/cocotb  
+https://en.wikipedia.org/wiki/Coroutine#Implementations_for_Python  
+https://github.com/SpinalHDL  
+https://github.com/corundum/corundum  
+https://en.wikipedia.org/wiki/ARM_architecture  
+https://en.wikipedia.org/wiki/Raspberry_Pi  
+https://github.com/ariovistus/pyd  
+---
+speaker: 李枫
+---
+avatar: li-feng.JPG
