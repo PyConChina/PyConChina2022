@@ -1,0 +1,15 @@
+title: (闪电)Pants: Python 工程化必备构建工具
+---
+bio: 比图科技数据工程师
+---
+body:
+
+在数据与 AI 领域，Python 语言正大放异彩！但和 Python 在各个领域的广泛应用相比，其主流的构建工具非常羸弱。在 Python 项目变得更加复杂，参与的工程师数量攀升时，除了 Python 作为动态语言的固有缺点以外，构建和部署也是大型 Python 项目难以驾驭的一大原因。
+
+Pants 正是解决大型 Python 项目的不二选择！沈达将从 Pants 用户的角度，阐释如何用 Pants 构筑 Python 工程化的基石。
+---
+introduction: 沈达，毕业于中国科学技术大学计算机系，就职于比图科技，担任数据工程师。是 Rikai 这个大数据+AI 的 Python 项目的核心贡献者，也是墨干编辑器的作者，另外译有《Scala实用指南》一书。
+---
+speaker: 沈达
+---
+avatar: shen-da.jpeg
