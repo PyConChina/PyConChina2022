@@ -1,6 +1,6 @@
 {% extends "layout.html" %} {% block title %}{{ this.title }}{% endblock %} {% block body %}
 <div class="text-center">
-  <h1 class="font-bold text-4xl my-6 text-center">PyCon China 2022: {{this.title}}</h1>
+  <h1 class="font-bold text-4xl my-6 text-center text-shadow">PyCon China 2022: {{this.title}}</h1>
   <p class="text-xl mb-4">开始时间: {% if this.start_date %}{{this.start_date.strftime('%Y-%m-%d %H:%M:%S')}}{% else %}待定{% endif %}</p>
   <p class="mb-4">地点: {{this.venue|default('待定')}}</p>
   <div>
@@ -14,7 +14,7 @@
   </div>
 </div>
 <section>
-  <h1 class="font-bitmap text-4xl my-6">演讲嘉宾</h1>
+  <h1 class="text-4xl my-6 flex items-center space-x-2"><img src="{{'snake.png'|asseturl}}" /><span class="font-bitmap">演讲嘉宾</span></h1>
   {% for talk in this.children %}
   <a href="{{talk._path|url}}">
     <div class="shadow-xl border-2 border-black border-solid bg-white p-4 my-4 flex items-center space-x-4">

@@ -28,3 +28,8 @@
 .menu:hover .menu-item {
   display: block;
 }
+
+body {
+  background-image: url('./pattern.png');
+  background-repeat: repeat;
+}
