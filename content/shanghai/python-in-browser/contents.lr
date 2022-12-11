@@ -1,4 +1,4 @@
-title: (闪电)在浏览器中运行 Python
+title: [闪电演讲]在浏览器中运行 Python
 ---
 avatar: /anonymous.jpg
 ---
@@ -11,6 +11,11 @@ WebAssembly 的出现，使得不同的编程语言运行在浏览器中，成�
 
 那么，我们如何能让 Python 运行在浏览器中？背后还需要用哪些技术？更进一步地，在纯浏览器环境中调试 Python 是否可行？
 ---
-introduction: 《Visual Studio Code 权威指南》作者，微软开发平台事业部高级软件工程师，VS Code 中文社区创始人，VS Code 的代码贡献者。写过 20 多款 VS Code 插件，其中最热门的 Code Runner 插件有超过四千万下载量。他是《玩转VS Code》公众号和知乎专栏的作者。他还是 QCon、PyCon、JSConf、.NET Conf、Microsoft Tech Summit、Google Developer Group、COSCon 等大会的讲师。
+introduction:
+
+《Visual Studio Code 权威指南》作者，微软开发平台事业部高级软件工程师，VS Code 中文社区创始人，VS Code 的代码贡献者。写过 20 多款 VS Code 插件，其中最热门的 Code Runner 插件有超过四千万下载量。\
+他是《玩转VS Code》公众号和知乎专栏的作者。他还是 QCon、PyCon、JSConf、.NET Conf、Microsoft Tech Summit、Google Developer Group、COSCon 等大会的讲师。
 ---
 speaker: 韩骏
+---
+start_date: 2022-12-17 16:30:00 Asia/Shanghai
