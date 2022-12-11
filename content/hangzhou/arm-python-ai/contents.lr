@@ -12,6 +12,9 @@ body:
 
 本次演讲，将向大家介绍我们在倚天710 ARM 芯片上开展的 Python+AI 优化工作，以及在 ARM 云平台上部署 Python+AI 任务的最佳实践。
 ---
-introduction: 具有 Python 运行时、Python 科学/AI计算库研发经验，熟悉机器学习、深度学习。目前进行线性代数库 OpenBLAS、深度学习库 PyTorch 在 ARM 平台的优化、适配工作。
+introduction:
+
+具有 Python 运行时、Python 科学/AI计算库研发经验，熟悉机器学习、深度学习。\
+目前进行线性代数库 OpenBLAS和深度学习库 PyTorch 在 ARM 平台的优化、适配工作。
 ---
 speaker: 朱宏林

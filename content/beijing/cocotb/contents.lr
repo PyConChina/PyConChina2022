@@ -11,20 +11,27 @@ body:
 3. 使用 Cocotb 进行测试验证的智能网卡项目 Corundum，并在 ARM 开放硬件平台(如树莓派4)上实践； 
 4. 探索 Cocotb 的未来--CocotbD 项目的设想与设计。
 
-另附议题涉及的主要技术栈参考链接如下：  
-Major reference links for the tech stack:   
-https://en.wikipedia.org/wiki/Electronic_design_automation  
-https://en.wikipedia.org/wiki/Hardware_description_language   
-https://en.wikipedia.org/wiki/Hardware_verification_language  
-https://github.com/ben-marshall/awesome-open-hardware-verification  
-https://github.com/cocotb  
-https://en.wikipedia.org/wiki/Coroutine#Implementations_for_Python  
-https://github.com/SpinalHDL  
-https://github.com/corundum/corundum  
-https://en.wikipedia.org/wiki/ARM_architecture  
-https://en.wikipedia.org/wiki/Raspberry_Pi  
-https://github.com/ariovistus/pyd  
+议题涉及的主要技术栈参考链接如下：  
+
+- https://en.wikipedia.org/wiki/Electronic_design_automation  
+- https://en.wikipedia.org/wiki/Hardware_description_language   
+- https://en.wikipedia.org/wiki/Hardware_verification_language  
+- https://github.com/ben-marshall/awesome-open-hardware-verification  
+- https://github.com/cocotb  
+- https://en.wikipedia.org/wiki/Coroutine#Implementations_for_Python  
+- https://github.com/SpinalHDL  
+- https://github.com/corundum/corundum  
+- https://en.wikipedia.org/wiki/ARM_architecture  
+- https://en.wikipedia.org/wiki/Raspberry_Pi  
+- https://github.com/ariovistus/pyd  
 ---
 speaker: 李枫
 ---
 avatar: li-feng.JPG
+---
+introduction:
+
+先后就职于摩托罗拉、三星等IT公司，现为独立开发者。在移动平台上积累了十年以上的研发经验，近几年主要专注于云计算/边缘计算基础设施（包括AI、Virtualization、Program Runtime、Network、5G、RISC-V、EDA等软硬件领域）。\
+是《灰帽黑客 第4版：正义黑客的道德规范、渗透测试、攻击方法和漏洞分析技术》（ISBN：9787302428671）和《恶意网络环境下的Linux防御之道 》（ISBN: 9787115544384）中文版的主要译者。
+对技术创新具有浓厚的兴趣和实践能力，热心参与开源社区的各种活动，多次参加各类IT会议。
+过往各种技术分享（皆为第一作者）的链接：https://github.com/XianBeiTuoBaFeng2015/MySlides

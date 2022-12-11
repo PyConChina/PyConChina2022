@@ -1,4 +1,4 @@
-title: (闪电)Pants: Python 工程化必备构建工具
+title: [闪电演讲] Pants: Python 工程化必备构建工具
 ---
 bio: 比图科技数据工程师
 ---
@@ -8,7 +8,11 @@ body:
 
 Pants 正是解决大型 Python 项目的不二选择！沈达将从 Pants 用户的角度，阐释如何用 Pants 构筑 Python 工程化的基石。
 ---
-introduction: 沈达，毕业于中国科学技术大学计算机系，就职于比图科技，担任数据工程师。是 Rikai 这个大数据+AI 的 Python 项目的核心贡献者，也是墨干编辑器的作者，另外译有《Scala实用指南》一书。
+introduction:
+
+毕业于中国科学技术大学计算机系，就职于比图科技，担任数据工程师。\
+是 Rikai 这个大数据+AI 的 Python 项目的核心贡献者，也是墨干编辑器的作者。\
+译有《Scala实用指南》一书。
 ---
 speaker: 沈达
 ---
