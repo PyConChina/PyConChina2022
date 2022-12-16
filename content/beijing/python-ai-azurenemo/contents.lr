@@ -2,7 +2,7 @@ title: 基于 Python 实现语音 AI 的快速开发 — Azure+NeMo 实战
 ---
 avatar: li-yi-peng.jpg
 ---
-bio: NVIDIA 企业级开发者社区高级经理
+bio: 李奕澎：NVIDIA 企业级开发者社区高级经理/卢建晖：微軟雲技術布道師
 ---
 body:
 
@@ -28,4 +28,6 @@ introduction:
 拥有4年数据分析建模开发经验，5年人工智能自然语言处理开发经验。\
 在自动语音识别，自然语言处理，自然语言理解方面有着丰富的实战经验与见解。曾主导完成基于 NLP 的智能对话，智能信息抽取，意图识别，文本分类等多个项目
 ---
-speaker: 李奕澎
+speaker: 李奕澎/卢建晖
+---
+start_date: 2022-12-17 15:30 Asia/Shanghai

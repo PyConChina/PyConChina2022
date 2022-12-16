@@ -2,7 +2,7 @@ title: 使用 Streamlit 在 Python 脚本中快速构建一个可共享数据应
 ---
 bio:
 
-Python committer since 2016 
+Python committer since 2016
 ---
 body:
 
@@ -16,3 +16,5 @@ introduction: PingCAP Cloud Ecosystem Service Team Leader
 speaker: 张翔
 ---
 avatar: zhang-xiang.jpg
+---
+start_date: 2022-12-17 14:45:00 Asia/Shanghai
